@@ -90,8 +90,8 @@ int main(int argc, char ** argv)
 		inputLength  = strlen(input);
 		char byte = 0;
 
-		actualString = (char *) malloc(inputLength);
-		memset(actualString, 0, inputLength);
+		actualString = (char *) malloc((inputLength/2)+1);
+		memset(actualString, 0, (inputLength/2)+1);
 
 		for (int i = 0; i < inputLength;)
 		{

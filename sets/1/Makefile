@@ -1,0 +1,13 @@
+TARGET_HEX2BASE64=hex2Base64
+
+
+
+all: $(TARGET_HEX2BASE64)
+
+
+$(TARGET_HEX2BASE64):
+	gcc -o $(TARGET_HEX2BASE64) p1/hex2Base64.cpp
+	
+	
+clean:
+	rm -f $(TARGET_HEX2BASE64)
